@@ -45,8 +45,13 @@ public class HomeFragment extends Fragment {
                 String randomnumberstring = randomnumber + "";
                 roulettetxt.setText(randomnumberstring);
             }
+
+
+
+
         });
         return root;
+
     }
 
     @Override
