@@ -2,41 +2,37 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/RegisterRedirectBtn"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".RegisterPage.Registory">
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/RegisterNameTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="350px"
+        android:layout_height="135px"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="name"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/RegisterEmeilTxt"
+        android:backgroundTint="#4CAF50"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/CreateRedirectBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/RegisterPasswordTxt"
+        android:id="@+id/PasswordLoginText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="30dp"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/RegisterBtn"
+        app:layout_constraintBottom_toTopOf="@+id/LoginBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/RegisterEmeilTxt"
+        android:id="@+id/EmailLoginText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
@@ -45,19 +41,22 @@
         android:ems="10"
         android:hint="email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/RegisterPasswordTxt"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordLoginText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/RegisterBtn"
+        android:id="@+id/CreateRedirectBtn"
         android:layout_width="350px"
-        android:layout_height="135px"
+        android:layout_height="160px"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="150dp"
-        android:text="Register"
+        android:backgroundTint="#4CAF50"
+        android:text="Create account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
